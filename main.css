@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    --trans: all .3s ease-in-out;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.interface {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+div.menu {
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #262626;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.topo {
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    top: 0px;
+    padding-left: 10px;
+    padding-top: auto;
+    padding-bottom: auto;
+    background: #353535;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.view {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 65px;
+    background: #f9f9f9;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+
+/* Sidebar */
+
+div.menu img.logo {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+    margin-bottom: 0px;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.menu ul.lista {
+    width: 100%;
+    height: max-content;
+    list-style: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+div.menu ul.lista a.link {
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+}
+
+div.menu ul.lista a.link:hover {
+    text-decoration: none;
+    background: white;
+}
+
+div.menu ul.lista a.ativo {
+    text-decoration: none;
+    background: white;
+}
+
+div.menu ul.lista a.link li {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0;
+}
+
+div.menu ul.lista a.link li i.fas {
+    width: auto;
+    height: auto;
+    transform: scale(auto);
+    color: white;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+    -webkit-transform: scale(auto);
+    -moz-transform: scale(auto);
+    -ms-transform: scale(auto);
+    -o-transform: scale(auto);
+}
+
+div.menu ul.lista a.ativo li i.fas {
+    color: #262626;
+}
+
+div.menu ul.lista a.link:focus {
+    outline: none;
+}
+
+div.menu ul.lista a.link:hover li i.fas {
+    color: #262626
+}
+
+div.topo h4.titulo {
+    color: white;
+}
+
+
+/* fim */
+
+@media (min-width:550px) {
+    div.menu ul.lista a.link li {
+        padding-left: 30%;
+    }
+    div.menu {
+        width: 8%;
+        height: 90%;
+        top: 10%;
+        padding-top: 0px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.view {
+        width: 92%;
+        left: 8%;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
+
+@media (min-width:720px) {
+    div.menu ul.lista a.link li {
+        padding-left: 35%
+    }
+    div.menu ul.lista a.link li i.fas {
+        transform: scale(1.2);
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    div.menu {
+        position: absolute;
+        width: 6%;
+        height: 100%;
+        top: 0%;
+        padding-top: 5px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.topo,
+    div.view {
+        width: 94%;
+        left: 6%;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
+
+@media (min-width:1050px) {
+    div.menu img.logo {
+        visibility: visible;
+        width: 90%;
+        height: 60px;
+        max-width: 60px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
+
+@media (min-width:1180px) {
+    div.menu ul.lista a.link li {
+        padding-left: 40%;
+    }
+    div.menu ul.lista a.link li i.fas {
+        transform: scale(1.5);
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+    div.menu {
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.topo,
+    div.view {
+        /* width: 100%; */
+        /* left: 0%; */
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
