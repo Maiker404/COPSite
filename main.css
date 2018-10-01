@@ -6,6 +6,10 @@
 
 :root {
     --trans: all .3s ease-in-out;
+    --cor1:#262626;
+    --cor2:#353535;
+    --cor3:#f9f9f9;
+    --cor4:white;
 }
 
 body {
@@ -31,7 +35,7 @@ div.menu {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #262626;
+    background: var(--cor1);
     padding-top: 0px;
     display: flex;
     flex-direction: column;
@@ -51,7 +55,7 @@ div.topo {
     padding-left: 10px;
     padding-top: auto;
     padding-bottom: auto;
-    background: #353535;
+    background: var(--cor2);
     transition: var(--trans);
     -webkit-transition: var(--trans);
     -moz-transition: var(--trans);
@@ -64,7 +68,7 @@ div.view {
     width: 100%;
     height: 90%;
     top: 65px;
-    background: #f9f9f9;
+    background: var(--cor3);
     transition: var(--trans);
     -webkit-transition: var(--trans);
     -moz-transition: var(--trans);
@@ -110,12 +114,12 @@ div.menu ul.lista a.link {
 
 div.menu ul.lista a.link:hover {
     text-decoration: none;
-    background: white;
+    background: var(--cor4);
 }
 
 div.menu ul.lista a.ativo {
     text-decoration: none;
-    background: white;
+    background: var(--cor4);
 }
 
 div.menu ul.lista a.link li {
@@ -133,7 +137,7 @@ div.menu ul.lista a.link li i.fas {
     width: auto;
     height: auto;
     transform: scale(auto);
-    color: white;
+    color: var(--cor4);
     transition: var(--trans);
     -webkit-transition: var(--trans);
     -moz-transition: var(--trans);
@@ -146,7 +150,7 @@ div.menu ul.lista a.link li i.fas {
 }
 
 div.menu ul.lista a.ativo li i.fas {
-    color: #262626;
+    color: var(--cor1);
 }
 
 div.menu ul.lista a.link:focus {
@@ -154,11 +158,11 @@ div.menu ul.lista a.link:focus {
 }
 
 div.menu ul.lista a.link:hover li i.fas {
-    color: #262626
+    color: var(--cor1);
 }
 
 div.topo h4.titulo {
-    color: white;
+    color: var(--cor4);
 }
 
 
