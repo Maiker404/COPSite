@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Righteous');
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -75,10 +76,120 @@ div.view {
     -ms-transition: var(--trans);
     -o-transition: var(--trans);
 }
+div.navHome{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    padding: 5px 10px;
+    top: 0px;
+    left: 0px;
+    background: var(--cor1);
+    transition: var(--trans);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+div.viewHome{
 
-
-/* Sidebar */
-
+}
+div.logo{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* Sub elementos */
+    /* Home */
+    div.navHome div.logo img.logo {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.navHome div.logo label{
+        color: var(--cor4);
+        font-size: 30px;
+        font-family: 'Pacifico', cursive;
+    }
+    div.navHome ul.lista{
+        width: 100px;
+        height: 80%;
+        list-style: none;
+        outline: none;
+        display: flex;
+        flex-direction: row;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    div.navHome ul.lista a.link{
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding-left: 5px;
+        border-radius: 7px
+    }
+    div.navHome ul.lista a.link:hover{
+        background: var(--cor3)
+    }
+    div.navHome ul.lista a.link li{
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        padding-left: 0;
+    }
+    div.navHome ul.lista a.link li i.fas{
+        width: auto;
+        height: auto;
+        transform: scale(auto);
+        color: var(--cor4);
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+        -webkit-transform: scale(auto);
+        -moz-transform: scale(auto);
+        -ms-transform: scale(auto);
+        -o-transform: scale(auto);
+    }
+    div.navHome ul.lista a.link li label {
+        width: auto;
+        height: auto; 
+        font-family: 'Righteous', cursive;
+        color: var(--cor4);
+        font-size: 20px;
+        margin-left: 10px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.navHome ul.lista a.link:hover li i.fas,
+    div.navHome ul.lista a.link:hover li label
+    {
+        color: var(--cor1);
+    }
+/* Resto do site */
 div.menu img.logo {
     visibility: hidden;
     width: 0%;
@@ -90,7 +201,6 @@ div.menu img.logo {
     -ms-transition: var(--trans);
     -o-transition: var(--trans);
 }
-
 div.menu ul.lista {
     width: 100%;
     height: max-content;
