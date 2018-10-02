@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico|Righteous');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    --trans: all .3s ease-in-out;
+    --cor1: #262626;
+    --cor2: #353535;
+    --cor3: #f9f9f9;
+    --cor4: white;
+    --cor5: #e0e0e0;
+    --cor6: #818181;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.interface {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+div.menu {
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: var(--cor1);
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.topo {
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    top: 0px;
+    padding-left: 10px;
+    padding-top: auto;
+    padding-bottom: auto;
+    background: var(--cor2);
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.view {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 65px;
+    background: var(--cor3);
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.navHome {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 5px 10px;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    background: var(--cor1);
+    transition: var(--trans);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.viewHome {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--cor5);
+    transition: var(--trans);
+    overflow-y: scroll;
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.logonav {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Sub elementos */
+
+
+/* Home */
+
+div.navHome div.logonav img.logonav {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.navHome div.logonav label {
+    color: var(--cor4);
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+div.navHome ul.lista {
+    width: 100px;
+    height: 80%;
+    list-style: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+div.navHome ul.lista a.link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background: none;
+    padding-left: 5px;
+    border-radius: 7px
+}
+
+div.navHome ul.lista a.link:hover {
+    background: var(--cor3)
+}
+
+div.navHome ul.lista a.link li {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0;
+}
+
+div.navHome ul.lista a.link li i.fas {
+    width: auto;
+    height: auto;
+    transform: scale(auto);
+    color: var(--cor4);
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+    -webkit-transform: scale(auto);
+    -moz-transform: scale(auto);
+    -ms-transform: scale(auto);
+    -o-transform: scale(auto);
+}
+
+div.navHome ul.lista a.link li label {
+    width: auto;
+    height: auto;
+    font-family: 'Righteous', cursive;
+    color: var(--cor4);
+    font-size: 20px;
+    margin-left: 10px;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.navHome ul.lista a.link:hover li i.fas,
+div.navHome ul.lista a.link:hover li label {
+    color: var(--cor1);
+}
+
+div.viewHome h3.titulo {
+    color: var(--cor2);
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    margin: 0px;
+}
+
+div.viewHome h4.subtitulo {
+    color: var(--cor2);
+    font-family: 'Righteous', cursive;
+    margin-top: 0px;
+}
+
+div.viewHome img.preview {
+    width: 40%;
+    position: relative;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+div.viewHome p.desc {
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    font-size: 17px;
+    color: var(--cor1);
+    text-align: justify;
+    text-indent: 2em;
+    font-family: 'Bree Serif', sans-serif;
+}
+
+div.viewHome div.sobre {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+div.viewHome div.sobre img.foto {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    z-index: 1;
+    transform: scale(1);
+    border-radius: 50%;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+div.viewHome div.sobre img.foto:hover {
+    transform: scale(1.1);
+    transition: var(--trans);
+    border-radius: 25px;
+    z-index: 2;
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+div.viewHome label {
+    position: relative;
+    height: fit-content;
+    max-width: 500px;
+    margin-top: 20px;
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: var(--cor1);
+}
+
+div.viewHome p.descDev {
+    position: relative;
+    width: 45%;
+    height: fit-content;
+    font-size: 17px;
+    color: var(--cor1);
+    text-align: center;
+    font-family: 'Bree Serif', sans-serif;
+}
+
+
+/* Resto do site */
+
+div.menu img.logo {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+    margin-bottom: 0px;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+
+div.menu ul.lista {
+    width: 100%;
+    height: max-content;
+    list-style: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+div.menu ul.lista a.link {
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+}
+
+div.menu ul.lista a.link:hover {
+    text-decoration: none;
+    background: var(--cor4);
+}
+
+div.menu ul.lista a.ativo {
+    text-decoration: none;
+    background: var(--cor4);
+}
+
+div.menu ul.lista a.link li {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0;
+}
+
+div.menu ul.lista a.link li i.fas {
+    width: auto;
+    height: auto;
+    transform: scale(auto);
+    color: var(--cor4);
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+    -webkit-transform: scale(auto);
+    -moz-transform: scale(auto);
+    -ms-transform: scale(auto);
+    -o-transform: scale(auto);
+}
+
+div.menu ul.lista a.ativo li i.fas {
+    color: var(--cor1);
+}
+
+div.menu ul.lista a.link:focus {
+    outline: none;
+}
+
+div.menu ul.lista a.link:hover li i.fas {
+    color: var(--cor1);
+}
+
+div.topo h4.titulo {
+    color: var(--cor4);
+}
+
+
+/* fim */
+
+@media (min-width:550px) {
+    div.viewHome div.sobre {
+        width: 45%
+    }
+    div.menu ul.lista a.link li {
+        padding-left: 30%;
+    }
+    div.menu {
+        width: 8%;
+        height: 90%;
+        top: 10%;
+        padding-top: 0px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.view {
+        width: 92%;
+        left: 8%;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
+
+@media (min-width:720px) {
+    div.viewHome div.sobre {
+        width: 35%
+    }
+    div.menu ul.lista a.link li {
+        padding-left: 35%
+    }
+    div.menu ul.lista a.link li i.fas {
+        transform: scale(1.2);
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    div.menu {
+        position: absolute;
+        width: 6%;
+        height: 100%;
+        top: 0%;
+        padding-top: 5px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.topo,
+    div.view {
+        width: 94%;
+        left: 6%;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
+
+@media (min-width:1050px) {
+    div.viewHome div.sobre {
+        width: 25%
+    }
+    div.menu img.logo {
+        visibility: visible;
+        width: 90%;
+        height: 60px;
+        max-width: 60px;
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
+
+@media (min-width:1180px) {
+    div.menu ul.lista a.link li {
+        padding-left: 40%;
+    }
+    div.menu ul.lista a.link li i.fas {
+        transform: scale(1.5);
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+    div.menu {
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+    div.topo,
+    div.view {
+        /* width: 100%; */
+        /* left: 0%; */
+        transition: var(--trans);
+        -webkit-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -ms-transition: var(--trans);
+        -o-transition: var(--trans);
+    }
+}
