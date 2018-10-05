@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DashBoard - Maiker</title>
+    <title>Dashboard - Maiker</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -157,18 +157,22 @@
                 $('div#opt').removeClass('activ');
                 if (id === 'dash') {
                     $('#dash').addClass('ativo');
-                    $('h4.titulo').text("DashBoard");
+                    $('h4.titulo').text("Dashboard");
+                    $('title').text("Dashboard - Maiker");
                 } else if (id === 'proj') {
                     $('#proj').addClass('ativo');
                     $('div#opt').addClass('activ');
                     $('h4.titulo').text("Projetos");
+                    $('title').text("Projetos - Maiker");
                 } else if (id === 'tare') {
                     $('#tare').addClass('ativo');
                     $('div#opt').addClass('activ');
                     $('h4.titulo').text("Tarefas");
+                    $('title').text("Tarefas - Maiker");
                 } else if (id === 'config') {
                     $('a.link#config').addClass('ativo');
                     $('h4.titulo').text("Configurações");
+                    $('title').text("Configurações - Maiker");
                 }
             });
         });
