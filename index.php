@@ -19,7 +19,7 @@
                 <label for="">COP</label>
             </div>
             <ul class="lista">
-                <a href="login.html" class="link">
+                <a href="login.php" class="link">
                     <li>
                         <i class="fas fa-sign-in-alt"></i>
                         <label for="">Logar</label>

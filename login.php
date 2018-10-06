@@ -20,7 +20,7 @@
             <div class="icon">
                 <img src="src/Logo.png" alt="">
             </div>
-            <form action="dashboard.html" method="POST">
+            <form action="dashboard.php" method="POST">
                 <label for="" class="user">Usuario</label>
                 <input type="text" name="user" id="userLogin" required>
                 <label for="" class="pass">Senha</label>
@@ -35,7 +35,7 @@
     <script>
         $(document).ready(function() {
             $('#home').click(function() {
-                window.location.href = "index.html";
+                window.location.href = "index.php";
             });
             $('#btnTeste').click(function() {
                 var $listSort = $('#passLogin');

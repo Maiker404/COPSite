@@ -143,10 +143,10 @@
     <script>
         $(document).ready(function() {
             $('#logohome').click(function() {
-                window.location.href = "index.html";
+                window.location.href = "index.php";
             });
             $('div.card').click(function() {
-                window.location.href = "index.html";
+                window.location.href = "index.php";
             });
             $('i#menuToggle').click(function() {
                 $('#MenuPane').toggleClass('menuactiv');
