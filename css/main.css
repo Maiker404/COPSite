@@ -308,7 +308,7 @@ div.viewHome h4.subtitulo {
 }
 
 div.viewHome img.preview {
-    width: 50%;
+    width: 70%;
     position: relative;
     border-radius: 3px;
     transition: var(--trans);
@@ -390,6 +390,8 @@ div.viewHome div.sobre i.fab {
     width: auto;
     height: auto;
     margin: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
     z-index: 1;
     transform: scale(4.3);
     transition: var(--trans);
@@ -922,6 +924,9 @@ div.topo h4.titulo {
 }
 
 @media (min-width:720px) {
+    div.viewHome img.preview {
+        width: 60%;
+    }
     div.view div.card {
         width: 48%;
         margin: 20px 1%;
@@ -985,6 +990,9 @@ div.topo h4.titulo {
 }
 
 @media (min-width:1050px) {
+    div.viewHome img.preview {
+        width: 50%;
+    }
     div.login form input {
         width: 50%;
     }
