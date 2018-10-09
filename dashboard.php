@@ -17,12 +17,12 @@
         <div class="menu" id="MenuPane">
             <img src="src/Logo.png" alt="" class="logo" id="logohome">
             <ul class="lista">
-                <a class="link" id="dash">
+                <a class="link ativo" id="dash">
                     <li>
                         <i class="fas fa-th"></i>
                     </li>
                 </a>
-                <a class="link ativo" id="proj">
+                <a class="link " id="proj">
                     <li>
                         <i class="fas fa-clipboard-list"></i>
                     </li>
@@ -44,7 +44,7 @@
                 <i class="fas fa-list" id="menuToggle"></i>
                 <h4 class="titulo">Dashboard</h4>
             </div>
-            <div id="opt" class="options activ">
+            <div id="opt" class="options">
                 <div class="btn" id="novo">
                     <i class="fas fa-plus"></i>
                 </div>
