@@ -31,7 +31,7 @@
         <div class="viewHome">
             <h3 class="titulo">COP</h3>
             <h4 class="subtitulo">Coordenador e organizador de projetos.</h4>
-            <img src="src/Dash.PNG" alt="" class="preview">
+            <img src="src/dash.png" alt="" class="preview">
             <p class="desc">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
