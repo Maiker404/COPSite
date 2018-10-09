@@ -1,4 +1,4 @@
-# C.O.P
+﻿# C.O.P
 ### Criador e Organizador de Projetos
 ![](https://raw.githubusercontent.com/Maiker404/COPSite/master/bin/logo.png)
 
@@ -29,7 +29,7 @@ Desenvolvedor da Wireframe do site.
 
 
 ### Especificações Técnicas
-Site foi desenvolvido nas seguinte linguagens:
+ Site foi desenvolvido nas seguinte linguagens:
 
 -  **HTML5:** 
 	Usado para estruturação do site e suas demarcações de posicionamento.
