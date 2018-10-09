@@ -1,6 +1,7 @@
 # C.O.P
 ### Criador e Organizador de Projetos
 ![](https://raw.githubusercontent.com/Maiker404/COPSite/master/bin/logo.png)
+
 C.O.P é um site web feito para o gerenciamento de tarefas e de projetos. O sistema busca proporcionar mais facilidade e com mais organização e agilidade, os usuários se cadastram, cria projetos e subdivide os mesmos em tarefas que são atribuídas a outros usuários convidados.
 
 
