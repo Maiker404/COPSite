@@ -311,10 +311,15 @@ div.viewHome img.preview {
     width: 50%;
     position: relative;
     border-radius: 3px;
+    transition: var(--trans);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
 }
 
 div.viewHome p.desc {
@@ -381,6 +386,53 @@ div.viewHome div.sobre img.foto:hover {
     -o-border-radius: 10px;
 }
 
+div.viewHome div.sobre i.fab {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    z-index: 1;
+    transform: scale(4.3);
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+    -webkit-transform: scale(4.3);
+    -moz-transform: scale(4.3);
+    -ms-transform: scale(4.3);
+    -o-transform: scale(4.3);
+}
+
+div.viewHome div.sobre i.fab:hover {
+    transform: scale(4.9);
+    transition: var(--trans);
+    z-index: 2;
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+    -webkit-transform: scale(4.9);
+    -moz-transform: scale(4.9);
+    -ms-transform: scale(4.9);
+    -o-transform: scale(4.9);
+}
+
+div.viewHome div.sobre i.fa-js-square:hover {
+    color: #dddd1e;
+}
+
+div.viewHome div.sobre i.fa-html5:hover {
+    color: #e4860b;
+}
+
+div.viewHome div.sobre i.fa-css3-alt:hover {
+    color: #0f5ba1;
+}
+
+div.viewHome div.sobre i.fa-php:hover {
+    color: #3c13cf;
+}
+
 div.viewHome label {
     position: relative;
     height: fit-content;
@@ -392,11 +444,15 @@ div.viewHome label {
     color: var(--cor1);
 }
 
+div.viewHome label.subDev {
+    font-size: 20px;
+}
+
 div.viewHome p.descDev {
     position: relative;
     width: 45%;
     height: fit-content;
-    font-size: 17px;
+    font-size: 15px;
     color: var(--cor1);
     text-align: center;
     font-family: 'Bree Serif', sans-serif;
