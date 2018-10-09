@@ -8,18 +8,22 @@ C.O.P é um site web feito para o gerenciamento de tarefas e de projetos. O sist
 ####  Hagatta Thaynara Freitas
 
 ![](https://raw.githubusercontent.com/Maiker404/COPSite/master/bin/hagatta.jpg)
+
 Desenvolvedora do estilo do site.
 
 ####  Kassio Santos Barbosa
 ![](https://raw.githubusercontent.com/Maiker404/COPSite/master/bin/kassio.jpg)
+
 Desenvolvedor da funcionalidade do site e suas programação.
 
 ####  Maiker Helmet Maria de Oliveira
 ![](https://raw.githubusercontent.com/Maiker404/COPSite/master/bin/maiker.jpg)
+
 Desenvolvedor da Framework do site.
 
 ####  Mayque Pereira Oliveira 
 ![](https://raw.githubusercontent.com/Maiker404/COPSite/master/bin/mayque.jpg)
+
 Desenvolvedor da Wireframe do site.
 
 
