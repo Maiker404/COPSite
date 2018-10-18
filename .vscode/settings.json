@@ -1,0 +1,18 @@
+{
+  "workbench.colorTheme": "Monokai Dimmed",
+  "git.ignoreMissingGitWarning": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 0,
+  "explorer.confirmDragAndDrop": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSaveDelay": 4000,
+  "editor.formatOnSave": true,
+  "[php]": {
+    "editor.formatOnSave": true
+  }
+}

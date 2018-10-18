@@ -1,4 +1,4 @@
-<?php ?>
+<?php  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>C.O.P</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -33,7 +34,9 @@
             <h4 class="subtitulo">Coordenador e organizador de projetos.</h4>
             <img src="src/dash.png" alt="" class="preview" id="previewIndex">
             <p class="desc">
-                C.O.P é um site web feito para o gerenciamento de tarefas e de projetos. O sistema busca proporcionar mais facilidade e com mais organização e agilidade, os usuários se cadastram, cria projetos e subdivide os mesmos em tarefas que são atribuídas a outros usuários convidados.
+                C.O.P é um site web feito para o gerenciamento de tarefas e de projetos. O sistema busca proporcionar
+                mais facilidade e com mais organização e agilidade, os usuários se cadastram, cria projetos e subdivide
+                os mesmos em tarefas que são atribuídas a outros usuários convidados.
             </p>
             <label for="">Equipe de desenvolvimento</label>
             <div class="sobre">
@@ -52,33 +55,36 @@
                 <i class="fab fa-php" id="php"></i>
             </div>
             <label for="" class="subDev" id="lig">Linguagens</label>
-            <p class="descDev" id="infolig">Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!</p>
+            <p class="descDev" id="infolig">Usadas para desenvolver uma sistemática com uma sequência de regras
+                aplicadas!</p>
             <br><br><br><br><br><br><br><br><br>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js ">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js ">
+    </script>
     <script>
-    var i = 0;
-    $(document).ready(function(event) {
-        setInterval(async function reloadFoto() {
-            if (i == 0) {
-                $('img#previewIndex').attr("src", "src/dash.png");
-                i = 1;
-            } else if (i == 1) {
-                $('img#previewIndex').attr("src", "src/login.png");
-                i = 0;
-            }
-            // else if (i == 2) {
-            //     $('img#previewIndex').attr("src", "src/hagatta.jpg");
-            //     i = 3;
-            // } else if (i == 3) {
-            //     $('img#previewIndex').attr("src", "src/kassio.jpg");
-            //     i = 0;
-            // }
-        }, 5000);
-        // Fotos developers
+        var i = 0;
+        $(document).ready(function(event) {
+            setInterval(async function reloadFoto() {
+                if (i == 0) {
+                    $('img#previewIndex').attr("src", "src/dash.png");
+                    i = 1;
+                } else if (i == 1) {
+                    $('img#previewIndex').attr("src", "src/login.png");
+                    i = 0;
+                }
+                // else if (i == 2) {
+                //     $('img#previewIndex').attr("src", "src/hagatta.jpg");
+                //     i = 3;
+                // } else if (i == 3) {
+                //     $('img#previewIndex').attr("src", "src/kassio.jpg");
+                //     i = 0;
+                // }
+            }, 5000);
+            // Fotos developers
             // Hover
             $('img#maiker').mouseenter(function() {
                 $('#dev').text("Maiker Helmet");
@@ -99,22 +105,26 @@
             // Inhover
             $('img#maiker').mouseout(function() {
                 $('#dev').text("Desenvolvedores");
-                $('#infodev').text("Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
+                $('#infodev').text(
+                    "Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
             });
             $('img#hagatta').mouseout(function() {
                 $('#dev').text("Desenvolvedores");
-                $('#infodev').text("Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
+                $('#infodev').text(
+                    "Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
             });
             $('img#kassio').mouseout(function() {
                 $('#dev').text("Desenvolvedores");
-                $('#infodev').text("Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
+                $('#infodev').text(
+                    "Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
             });
             $('img#mayque').mouseout(function() {
                 $('#dev').text("Desenvolvedores");
-                $('#infodev').text("Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
+                $('#infodev').text(
+                    "Desenvolvedores que fizeram o site baseado no programa Desktop COP!");
             });
-        // Fim das fotos
-        // Linguagens
+            // Fim das fotos
+            // Linguagens
             // Hover
             $('i#html').mouseenter(function() {
                 $('#lig').text("HTML 5");
@@ -135,21 +145,29 @@
             // Inhover
             $('i#html').mouseout(function() {
                 $('#lig').text("Linguagens");
-                $('#infolig').text("Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!");
+                $('#infolig').text(
+                    "Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!"
+                );
             });
             $('i#css').mouseout(function() {
                 $('#lig').text("Linguagens");
-                $('#infolig').text("Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!");
+                $('#infolig').text(
+                    "Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!"
+                );
             });
             $('i#js').mouseout(function() {
                 $('#lig').text("Linguagens");
-                $('#infolig').text("Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!");
+                $('#infolig').text(
+                    "Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!"
+                );
             });
             $('i#php').mouseout(function() {
                 $('#lig').text("Linguagens");
-                $('#infolig').text("Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!");
+                $('#infolig').text(
+                    "Usadas para desenvolver uma sistemática com uma sequência de regras aplicadas!"
+                );
             });
-    });
+        });
     </script>
 
 </body>
