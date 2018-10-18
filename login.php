@@ -23,29 +23,33 @@
             <div class="icon">
                 <img src="src/Logo.png" alt="">
             </div>
-            <form action="dashboard.php" method="POST" class="login">
-                <label for="" class="user">Usuario</label>
-                <input type="text" name="user" id="userLogin" required>
-                <label for="" class="pass">Senha</label>
-                <input type="password" name="pass" id="passLogin" class="pass" required>
-                <button type="submit" class="loginBtn">Logar</button>
-            </form>
-            <button class="novoBtn">Novo</button>
-            <!-- <form action="cadastrar.php" method="POST" class="cadastro oculto">
-                <div class="coluna">
-                    <label for="" class="usernew">Usuario</label>
-                    <input type="text" name="user" id="userNew" required>
-                    <label for="" class="user">E-mail</label>
-                    <input type="email" name="emailnew" id="emailNew" required>
-                </div>
-                <div class="coluna">
+            <div class="containerform">
+                <form action="dashboard.php" method="POST" class="login">
+                    <label for="" class="user">Usuario</label>
+                    <input type="text" name="user" id="userLogin" required>
                     <label for="" class="pass">Senha</label>
-                    <input type="password" name="passNew" id="passNew" class="pass"  required>
-                    <label for="" class="pass">Confirmar senha</label>
-                    <input type="password" id="confpassNew" class="pass"  required>
-                </div>
-                <button type="submit" class="loginBtn">Casdastrar</button>
-            </form> -->
+                    <input type="password" name="pass" id="passLogin" class="pass" required>
+                    <button type="submit" class="loginBtn">Logar</button>
+                </form>
+                <button class="novoBtn">Novo</button>
+                <!-- <form action="cadastrar.php" method="POST" class="cadastro">
+                    <div class="campos">
+                        <div class="coluna">
+                            <label for="" class="usernew">Usuario</label>
+                            <input type="text" name="user" id="userNew" required>
+                            <label for="" class="user">E-mail</label>
+                            <input type="email" name="emailnew" id="emailNew" required>
+                        </div>
+                        <div class="coluna">
+                            <label for="" class="pass">Senha</label>
+                            <input type="password" name="passNew" id="passNew" class="pass" required>
+                            <label for="" class="pass">Confirmar senha</label>
+                            <input type="password" id="confpassNew" class="pass" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="loginBtn">Casdastrar</button>
+                </form> -->
+            </div>
         </div>
     </div>
 
@@ -55,13 +59,18 @@
     </script>
     <script>
         $(document).ready(function() {
-            // $('button.novoBtn').click(function() {
-            //     window.location.href = "index.php";
-            // });
+            $('button.novoBtn').click(async function() {
+                if ($('form.login') !== null) {
+                    $('.containerform').remove();
+                    let form =
+                        $().appendTo('.containerform');
+                }
+
+            });
             $('#home').click(function() {
                 window.location.href = "index.php";
             });
-            $('button.novoBtn').click(function() {
+            $('#viewPass').click(function() {
                 var $listSort = $('input.pass');
                 if ($listSort.attr('type')) {
                     $listSort.removeAttr('type');
