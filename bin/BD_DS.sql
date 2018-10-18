@@ -34,3 +34,37 @@ projeto_fk int references projeto(cod_pro),
 usuario_fk int references usuario(cod_usu)
 
 );
+
+DELIMITER $$
+create procedure cadastraUsuario(nome varchar(100), cpf varchar(12), telefone varchar(11), dataN date, tipo varchar(20))
+begin
+	if((nome is null) and (cpf is null) and (telefone is null) and (dataN is null) and (tipo is null))then
+		select 'preencha os campos corretamente' as mensagem;
+        else
+			insert into usuario values(null, nome, cpf,telefone, dataN, tipo);
+			select 'usuario cadastrado com sucesso' as mensagem;
+	end if;
+end
+$$ DELiMITER ;
+
+DELIMITER $$
+create procedure criarProjeto(nome varchar(100), descri varchar(300), dataI date, dataE date, adm int)
+begin
+	insert into projeto values (null, nome, descri, datI, dataE, adm);
+		select 'projeto criado com sucesso' as mensagem;
+end
+$$ DELIMITER ;
+
+DELIMITER $$
+create procedure criarTarefa()
+begin
+
+end
+$$ DELIMITER ;
+
+DELIMITER $$
+create procedure escolheEquipe()
+begin
+
+end
+$$ DELIMITER ;
