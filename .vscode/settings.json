@@ -10,7 +10,7 @@
   "explorer.confirmDelete": false,
   "files.autoSave": "afterDelay",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.autoSaveDelay": 4000,
+  "files.autoSaveDelay": 5000,
   "editor.formatOnSave": true,
   "[php]": {
     "editor.formatOnSave": true

@@ -23,7 +23,7 @@
             <div class="icon">
                 <img src="src/Logo.png" alt="">
             </div>
-            <div class="containerform">
+            <div class="containerform" id="formu">
                 <form action="dashboard.php" method="POST" class="login">
                     <label for="" class="user">Usuario</label>
                     <input type="text" name="user" id="userLogin" required>
@@ -55,22 +55,22 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js ">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js ">
-    </script>
     <script>
         $(document).ready(function() {
             $('button.novoBtn').click(async function() {
                 if ($('form.login') !== null) {
-                    $('.containerform').remove();
-                    let form =
-                        $().appendTo('.containerform');
+
+                    await $('div#formu').append(
+                        '<form action="cadastrar.php" method="POST" class="cadastro"><div class="campos"><div class="coluna"><label for="" class="usernew">Usuario</label><input type="text" name="user" id="userNew" required><label for="" class="user">E-mail</label><input type="email" name="emailnew" id="emailNew" required></div><div class="coluna"><label for="" class="pass">Senha</label><input type="password" name="passNew" id="passNew" class="pass" required><label for="" class="pass">Confirmar senha</label><input type="password" id="confpassNew" class="pass" required></div></div><button type="submit" class="loginBtn">Casdastrar</button></form>'
+                    );
+                    $('div#formu').remove();
                 }
 
             });
             $('#home').click(function() {
                 window.location.href = "index.php";
             });
-            $('#viewPass').click(function() {
+            $('#viewPass').click(async function() {
                 var $listSort = $('input.pass');
                 if ($listSort.attr('type')) {
                     $listSort.removeAttr('type');
