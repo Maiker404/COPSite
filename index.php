@@ -35,10 +35,23 @@
             <h3 class="titulo">COP</h3>
             <h4 class="subtitulo">Coordenador e organizador de projetos.</h4>
             <img src="src/dash.png" alt="" class="preview" id="previewIndex">
+            <label for="">O que é?</label>
             <p class="desc">
-                C.O.P é um site web feito para o gerenciamento de tarefas e de projetos. O sistema busca proporcionar
-                mais facilidade e com mais organização e agilidade, os usuários se cadastram, cria projetos e subdivide
-                os mesmos em tarefas que são atribuídas a outros usuários convidados.
+                C.O.P é um site web feito para o gerenciamento de projetos. O sistema busca proporcionar
+                facil uso e mais organização e agilidade, os usuários se cadastram, cria-se projetos e subdivide-se
+                os mesmos em tarefas que são atribuídas a usuários convidados.
+            </p>
+            <label for="">Seu uso?</label>
+            <p class="desc">
+                C.O.P é um site web feito para o gerenciamento de projetos. O sistema busca proporcionar
+                facil uso e mais organização e agilidade, os usuários se cadastram, cria-se projetos e subdivide-se
+                os mesmos em tarefas que são atribuídas a usuários convidados.
+            </p>
+            <label for="">Compartilhe com outros</label>
+            <p class="desc">
+                C.O.P é um site web feito para o gerenciamento de projetos. O sistema busca proporcionar
+                facil uso e mais organização e agilidade, os usuários se cadastram, cria-se projetos e subdivide-se
+                os mesmos em tarefas que são atribuídas a usuários convidados.
             </p>
             <label for="">Equipe de desenvolvimento</label>
             <div class="sobre">
@@ -128,19 +141,19 @@
             // Hover
             $('i#html').mouseenter(function() {
                 $('#lig').text("HTML 5");
-                $('#infolig').text("Desenvolvedor do framework do site!");
+                $('#infolig').text("Linguagem de marcação versão 5");
             });
             $('i#css').mouseenter(function() {
                 $('#lig').text("CSS 3");
-                $('#infolig').text("Desenvolvedora da estilistica do site!");
+                $('#infolig').text("Mecanismo para adição de estilo versão 3");
             });
             $('i#js').mouseenter(function() {
                 $('#lig').text("JavaScript");
-                $('#infolig').text("Desenvolvedor do wireframe do site!");
+                $('#infolig').text("Linguagem de programação interpretada");
             });
             $('i#php').mouseenter(function() {
                 $('#lig').text("PHP");
-                $('#infolig').text("Desenvolvedor da funcionalidade do site!");
+                $('#infolig').text("Linguagem interpretada livre");
             });
             // Inhover
             $('i#html').mouseout(function() {
